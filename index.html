@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:8000/ -->
+<html lang="en" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./AlotTodo1_files/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- boxicons  -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="./AlotTodo1_files/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./AlotTodo1_files/style.css">
+    <link href="./AlotTodo1_files/css2" rel="stylesheet">
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/static/todo/icon/favicon.ico">
+    <title>
+AlotTodo
+</title>
+
+<style type="text/css">button.btn[data-v-0a2a5063]{display:inline-block;font-weight:300;line-height:1.25;text-align:center;white-space:nowrap;vertical-align:middle;user-select:none;border:1px solid transparent;cursor:pointer;letter-spacing:1px;transition:all .15s ease}button.btn.btn-sm[data-v-0a2a5063]{padding:.4rem .8rem;font-size:.8rem;border-radius:.2rem}button.btn.btn-primary[data-v-0a2a5063]{color:#fff;background-color:#45C8F1;border-color:#45C8F1}button.btn.btn-outline-primary[data-v-0a2a5063]{color:#45C8F1;background-color:transparent;border-color:#45C8F1}button.btn.btn-danger[data-v-0a2a5063]{color:#fff;background-color:#FF4949;border-color:#FF4949}.text-muted[data-v-0a2a5063]{color:#8492A6}.text-center[data-v-0a2a5063]{text-align:center}.drop-down-enter[data-v-0a2a5063],.drop-down-leave-to[data-v-0a2a5063]{transform:translateX(0) translateY(-20px);transition-timing-function:cubic-bezier(0.74, 0.04, 0.26, 1.05);opacity:0}.drop-down-enter-active[data-v-0a2a5063],.drop-down-leave-active[data-v-0a2a5063]{transition:all .15s}.move-left-enter[data-v-0a2a5063],.move-left-leave-to[data-v-0a2a5063]{transform:translateY(0) translateX(-80px);transition-timing-function:cubic-bezier(0.74, 0.04, 0.26, 1.05);opacity:0}.move-left-enter-active[data-v-0a2a5063],.move-left-leave-active[data-v-0a2a5063]{transition:all .15s}.shake[data-v-0a2a5063]{animation:shake-data-v-0a2a5063 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;transform:translate3d(0, 0, 0)}@keyframes shake-data-v-0a2a5063{10%,90%{transform:translate3d(-1px, 0, 0)}20%,80%{transform:translate3d(2px, 0, 0)}30%,50%,70%{transform:translate3d(-4px, 0, 0)}40%,60%{transform:translate3d(4px, 0, 0)}}.pulse[data-v-0a2a5063]{animation:pulse-data-v-0a2a5063 2s ease infinite}@keyframes pulse-data-v-0a2a5063{0%{opacity:.7}50%{opacity:.4}100%{opacity:.7}}.flash-once[data-v-0a2a5063]{animation:flash-once 3.5s ease 1}@keyframes fade-up-data-v-0a2a5063{0%{transform:translate3d(0, 10px, 0);opacity:0}100%{transform:translate3d(0, 0, 0);opacity:1}}.fade-in[data-v-0a2a5063]{animation:fade-in-data-v-0a2a5063 .3s ease-in-out}@keyframes fade-in-data-v-0a2a5063{0%{opacity:0}100%{opacity:1}}.spin[data-v-0a2a5063]{animation-name:spin-data-v-0a2a5063;animation-duration:2000ms;animation-iteration-count:infinite;animation-timing-function:linear}@keyframes spin-data-v-0a2a5063{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.bounceIn[data-v-0a2a5063]{animation-name:bounceIn-data-v-0a2a5063;transform-origin:center bottom;animation-duration:1s;animation-fill-mode:both;animation-iteration-count:1}@keyframes bounceIn-data-v-0a2a5063{0%,20%,40%,60%,80%,100%{-webkit-transition-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1);transition-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)}0%{opacity:1;-webkit-transform:scale3d(0.8, 0.8, 0.8);transform:scale3d(0.8, 0.8, 0.8)}20%{-webkit-transform:scale3d(1.1, 1.1, 1.1);transform:scale3d(1.1, 1.1, 1.1)}40%{-webkit-transform:scale3d(0.9, 0.9, 0.9);transform:scale3d(0.9, 0.9, 0.9)}60%{opacity:1;-webkit-transform:scale3d(1.03, 1.03, 1.03);transform:scale3d(1.03, 1.03, 1.03)}80%{-webkit-transform:scale3d(0.97, 0.97, 0.97);transform:scale3d(0.97, 0.97, 0.97)}100%{opacity:1;-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}}@keyframes dots-data-v-0a2a5063{0%,20%{color:rgba(0,0,0,0);text-shadow:0.25em 0 0 rgba(0,0,0,0),0.5em 0 0 rgba(0,0,0,0)}40%{color:#8492A6;text-shadow:0.25em 0 0 rgba(0,0,0,0),0.5em 0 0 rgba(0,0,0,0)}60%{text-shadow:0.25em 0 0 #8492A6,0.5em 0 0 rgba(0,0,0,0)}80%,100%{text-shadow:.25em 0 0 #8492A6, .5em 0 0 #8492A6}}@keyframes recording-data-v-0a2a5063{0%{box-shadow:0px 0px 5px 0px rgba(173,0,0,0.3)}65%{box-shadow:0px 0px 5px 5px rgba(173,0,0,0.3)}90%{box-shadow:0px 0px 5px 5px rgba(173,0,0,0)}}html[data-v-0a2a5063]{max-height:500px}body[data-v-0a2a5063]{margin:0;font-size:100%;color:#3C4858;width:350px;max-height:500px}a[data-v-0a2a5063]{text-decoration:none;color:#45C8F1}h1[data-v-0a2a5063],h2[data-v-0a2a5063],h3[data-v-0a2a5063],h4[data-v-0a2a5063]{margin-top:0}.container_selected_area[data-v-0a2a5063]{padding:0px;position:fixed;z-index:2147483647;top:0px;left:0px;right:0px;bottom:0px;display:none;visibility:hidden}.container_selected_area.active[data-v-0a2a5063]{visibility:visible;display:block}.container_selected_area .label[data-v-0a2a5063]{font-family:"Didact Gothic Regular",sans-serif;font-size:22px;text-align:center;padding-top:15px}.container_selected_area .area[data-v-0a2a5063]{border:1px solid #1e83ff;background:rgba(30,131,255,0.1);display:none;position:fixed;z-index:2147483647;box-sizing:border-box}.container_selected_area .area.active[data-v-0a2a5063]{display:block;top:0px;left:0px}.hide[data-v-0a2a5063]{display:none}
+</style></head>
+
+<body style="">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container ">
+            <div>
+                <a class="navbar-brand" href="http://127.0.0.1:8000/"><i class="bx bxs-check-square bx-sm">ALotTodo</i></a>
+            </div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                
+                <form class="form-inline ml-auto" method="GET" action="http://127.0.0.1:8000/search/">
+                    <input class="form-control mr-sm-1" type="search" placeholder="Search Todos" aria-label="Search" name="query" required="">
+                    <div>
+                        <button class="btn btn-outline-dark my-2 my-sm-0 search-btn" type="submit"><i class="bx bx-search"></i></button>
+                    </div>
+                </form>
+                
+
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item"><a class="nav-link active" href="http://127.0.0.1:8000/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://127.0.0.1:8000/#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            demouser
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="http://127.0.0.1:8000/allcompletedtodo/"><i class="bx bx-checkbox-checked bx-lg">View Completed</i></a>
+                            <form action="http://127.0.0.1:8000/logout/" method="POST">
+                                <input type="hidden" name="csrfmiddlewaretoken" value="vNNBHyBWyeB6LG3iM75mj9Tn9sTb2BFH9bLWKKq7HG4OHRf5WItxlc5YeNK9Sru5">
+                                <button type="submit" class="dropdown-item">Log out</button>
+                            </form>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- git fork -->
+        <a href="https://github.com/meetdaxini/Alot_Todo" title="Fork me on GitHub" class="github-corner" target="_blank"><svg width="58" height="58" viewBox="0 0 250 250">
+                <title>Fork me on GitHub</title>
+                <path d="M0 0h250v250"></path>
+                <path d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2" fill="currentColor" style="transform-origin:130px 110px" class="octo-arm"></path>
+                <path d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z" fill="currentColor" class="octo-body"></path>
+            </svg>
+
+        </a>
+        <!--// git fork -->
+
+    </nav>
+
+    <div class="container  ">
+        
+        <div class="todo__flex">
+            
+
+
+
+<!-- todos -->
+<div>
+  <div class="todo-list shadow-lg mb-5 bg-white rounded">
+    <div class="todo-header">
+      <h2 class="list-title">DEMOUSER's List</h2>
+      <p class="task-count">17 tasks remaining</p>
+    </div>
+
+    <table class="todo-body">
+      <tbody class="tasks">
+        
+        <tr class="task ">
+          <form method="POST"></form>
+            <input type="hidden" name="csrfmiddlewaretoken" value="vNNBHyBWyeB6LG3iM75mj9Tn9sTb2BFH9bLWKKq7HG4OHRf5WItxlc5YeNK9Sru5">
+
+            <td> <button type="submit" formaction="/completetodo/76/complete" class="button__list button__check"><i class="bx bx-checkbox bx-tada-hover bx-sm"></i></button> </td>
+            <td class="todo-title"><a href="http://127.0.0.1:8000/viewtodo/76" class="todo__list"> 
+            sell old phone
+            </a></td>
+            <td><button type="submit" formaction="/imptodo/76/imp" class="button__list button__imp"><i class="bx bxs-error bx-flashing-hover bx-sm"></i></button> </td>
+            <td> <button type="submit" formaction="/deletetodo/76/delete" class="button__list button__del"><i class="bx bx-trash bx-burst-hover bx-sm"></i></button> </td>
+
+            <input type="hidden" name="url" value="/">
+          
+      </tr></tbody>
+      
+        <tbody><tr class="task ">
+          <form method="POST"></form>
+            <input type="hidden" name="csrfmiddlewaretoken" value="vNNBHyBWyeB6LG3iM75mj9Tn9sTb2BFH9bLWKKq7HG4OHRf5WItxlc5YeNK9Sru5">
+
+            <td> <button type="submit" formaction="/completetodo/75/complete" class="button__list button__check"><i class="bx bx-checkbox bx-tada-hover bx-sm"></i></button> </td>
+            <td class="todo-title"><a href="http://127.0.0.1:8000/viewtodo/75" class="todo__list"> 
+            weekly report
+            </a></td>
+            <td><button type="submit" formaction="/imptodo/75/imp" class="button__list button__imp"><i class="bx bxs-error bx-flashing-hover bx-sm"></i></button> </td>
+            <td> <button type="submit" formaction="/deletetodo/75/delete" class="button__list button__del"><i class="bx bx-trash bx-burst-hover bx-sm"></i></button> </td>
+
+            <input type="hidden" name="url" value="/">
+          
+      </tr></tbody>
+      
+        <tbody><tr class="task ">
+          <form method="POST"></form>
+            <input type="hidden" name="csrfmiddlewaretoken" value="vNNBHyBWyeB6LG3iM75mj9Tn9sTb2BFH9bLWKKq7HG4OHRf5WItxlc5YeNK9Sru5">
+
+            <td> <button type="submit" formaction="/completetodo/74/complete" class="button__list button__check"><i class="bx bx-checkbox bx-tada-hover bx-sm"></i></button> </td>
+            <td class="todo-title"><a href="http://127.0.0.1:8000/viewtodo/74" class="todo__list"> 
+            check email
+            </a></td>
+            <td><button type="submit" formaction="/imptodo/74/imp" class="button__list button__imp"><i class="bx bxs-error bx-flashing-hover bx-sm"></i></button> </td>
+            <td> <button type="submit" formaction="/deletetodo/74/delete" class="button__list button__del"><i class="bx bx-trash bx-burst-hover bx-sm"></i></button> </td>
+
+            <input type="hidden" name="url" value="/">
+          
+      </tr></tbody>
+      
+        <tbody><tr class="task ">
+          <form method="POST"></form>
+            <input type="hidden" name="csrfmiddlewaretoken" value="vNNBHyBWyeB6LG3iM75mj9Tn9sTb2BFH9bLWKKq7HG4OHRf5WItxlc5YeNK9Sru5">
+
+            <td> <button type="submit" formaction="/completetodo/73/complete" class="button__list button__check"><i class="bx bx-checkbox bx-tada-hover bx-sm"></i></button> </td>
+            <td class="todo-title"><a href="http://127.0.0.1:8000/viewtodo/73" class="todo__list"> 
+            yoga class
+            </a></td>
+            <td><button type="submit" formaction="/imptodo/73/imp" class="button__list button__imp"><i class="bx bxs-error bx-flashing-hover bx-sm"></i></button> </td>
+            <td> <button type="submit" formaction="/deletetodo/73/delete" class="button__list button__del"><i class="bx bx-trash bx-burst-hover bx-sm"></i></button> </td>
+
+            <input type="hidden" name="url" value="/">
+          
+      </tr></tbody>
+      
+        <tbody><tr class="task imp__todo">
+          <form method="POST"></form>
+            <input type="hidden" name="csrfmiddlewaretoken" value="vNNBHyBWyeB6LG3iM75mj9Tn9sTb2BFH9bLWKKq7HG4OHRf5WItxlc5YeNK9Sru5">
+
+            <td> <button type="submit" formaction="/completetodo/72/complete" class="button__list button__check"><i class="bx bx-checkbox bx-tada-hover bx-sm"></i></button> </td>
+            <td class="todo-title"><a href="http://127.0.0.1:8000/viewtodo/72" class="todo__list"> 
+            zoom meeting
+            </a></td>
+            <td><button type="submit" formaction="/imptodo/72/imp" class="button__list button__imp"><i class="bx bxs-error bx-flashing-hover bx-sm"></i></button> </td>
+            <td> <button type="submit" formaction="/deletetodo/72/delete" class="button__list button__del"><i class="bx bx-trash bx-burst-hover bx-sm"></i></button> </td>
+
+            <input type="hidden" name="url" value="/">
+          
+      </tr></tbody>
+      
+        <tbody><tr class="task ">
+          <form method="POST"></form>
+            <input type="hidden" name="csrfmiddlewaretoken" value="vNNBHyBWyeB6LG3iM75mj9Tn9sTb2BFH9bLWKKq7HG4OHRf5WItxlc5YeNK9Sru5">
+
+            <td> <button type="submit" formaction="/completetodo/71/complete" class="button__list button__check"><i class="bx bx-checkbox bx-tada-hover bx-sm"></i></button> </td>
+            <td class="todo-title"><a href="http://127.0.0.1:8000/viewtodo/71" class="todo__list"> 
+            go to gym
+            </a></td>
+            <td><button type="submit" formaction="/imptodo/71/imp" class="button__list button__imp"><i class="bx bxs-error bx-flashing-hover bx-sm"></i></button> </td>
+            <td> <button type="submit" formaction="/deletetodo/71/delete" class="button__list button__del"><i class="bx bx-trash bx-burst-hover bx-sm"></i></button> </td>
+
+            <input type="hidden" name="url" value="/">
+          
+      </tr></tbody>
+      
+        <tbody><tr class="task ">
+          <form method="POST"></form>
+            <input type="hidden" name="csrfmiddlewaretoken" value="vNNBHyBWyeB6LG3iM75mj9Tn9sTb2BFH9bLWKKq7HG4OHRf5WItxlc5YeNK9Sru5">
+
+            <td> <button type="submit" formaction="/completetodo/70/complete" class="button__list button__check"><i class="bx bx-checkbox bx-tada-hover bx-sm"></i></button> </td>
+            <td class="todo-title"><a href="http://127.0.0.1:8000/viewtodo/70" class="todo__list"> 
+            read new book
+            </a></td>
+            <td><button type="submit" formaction="/imptodo/70/imp" class="button__list button__imp"><i class="bx bxs-error bx-flashing-hover bx-sm"></i></button> </td>
+            <td> <button type="submit" formaction="/deletetodo/70/delete" class="button__list button__del"><i class="bx bx-trash bx-burst-hover bx-sm"></i></button> </td>
+
+            <input type="hidden" name="url" value="/">
+          
+      </tr></tbody>
+      
+        <tbody><tr class="task imp__todo">
+          <form method="POST"></form>
+            <input type="hidden" name="csrfmiddlewaretoken" value="vNNBHyBWyeB6LG3iM75mj9Tn9sTb2BFH9bLWKKq7HG4OHRf5WItxlc5YeNK9Sru5">
+
+            <td> <button type="submit" formaction="/completetodo/65/complete" class="button__list button__check"><i class="bx bx-checkbox bx-tada-hover bx-sm"></i></button> </td>
+            <td class="todo-title"><a href="http://127.0.0.1:8000/viewtodo/65" class="todo__list"> 
+            Take Meds
+            </a></td>
+            <td><button type="submit" formaction="/imptodo/65/imp" class="button__list button__imp"><i class="bx bxs-error bx-flashing-hover bx-sm"></i></button> </td>
+            <td> <button type="submit" formaction="/deletetodo/65/delete" class="button__list button__del"><i class="bx bx-trash bx-burst-hover bx-sm"></i></button> </td>
+
+            <input type="hidden" name="url" value="/">
+          
+      </tr></tbody>
+      
+        <tbody><tr class="task ">
+          <form method="POST"></form>
+            <input type="hidden" name="csrfmiddlewaretoken" value="vNNBHyBWyeB6LG3iM75mj9Tn9sTb2BFH9bLWKKq7HG4OHRf5WItxlc5YeNK9Sru5">
+
+            <td> <button type="submit" formaction="/completetodo/56/complete" class="button__list button__check"><i class="bx bx-checkbox bx-tada-hover bx-sm"></i></button> </td>
+            <td class="todo-title"><a href="http://127.0.0.1:8000/viewtodo/56" class="todo__list"> 
+            buy groceries
+            </a></td>
+            <td><button type="submit" formaction="/imptodo/56/imp" class="button__list button__imp"><i class="bx bxs-error bx-flashing-hover bx-sm"></i></button> </td>
+            <td> <button type="submit" formaction="/deletetodo/56/delete" class="button__list button__del"><i class="bx bx-trash bx-burst-hover bx-sm"></i></button> </td>
+
+            <input type="hidden" name="url" value="/">
+          
+      </tr></tbody>
+      
+        <tbody><tr class="task ">
+          <form method="POST"></form>
+            <input type="hidden" name="csrfmiddlewaretoken" value="vNNBHyBWyeB6LG3iM75mj9Tn9sTb2BFH9bLWKKq7HG4OHRf5WItxlc5YeNK9Sru5">
+
+            <td> <button type="submit" formaction="/completetodo/52/complete" class="button__list button__check"><i class="bx bx-checkbox bx-tada-hover bx-sm"></i></button> </td>
+            <td class="todo-title"><a href="http://127.0.0.1:8000/viewtodo/52" class="todo__list"> 
+            Complete website
+            </a></td>
+            <td><button type="submit" formaction="/imptodo/52/imp" class="button__list button__imp"><i class="bx bxs-error bx-flashing-hover bx-sm"></i></button> </td>
+            <td> <button type="submit" formaction="/deletetodo/52/delete" class="button__list button__del"><i class="bx bx-trash bx-burst-hover bx-sm"></i></button> </td>
+
+            <input type="hidden" name="url" value="/">
+          
+      </tr></tbody>
+      
+      <!-- /task -->
+    </table>
+    <div class="todo-arrows">
+      
+      
+      <a href="http://127.0.0.1:8000/?page=2" class="todo-arrow"><i class="bx bxs-right-arrow-circle bx-fade-right-hover bx-md"></i></a>
+      
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+  <button type="button" class="btn btn-body">
+    <a class="nav-link a-body" href="http://127.0.0.1:8000/allcompletedtodo/"><i class="bx bx-checkbox-checked bx-sm">View Completed</i></a></button>
+  </div>
+</div>
+
+
+            
+            <div class="add-flex  todo-list shadow-lg bg-white rounded">
+                <div class="add-head justify-content-center p-2">
+                    <div>
+                        <h2>Add Todo</h2>
+                        
+                        <p class="text-center error"></p>
+                    </div>
+                </div>
+                <form action="http://127.0.0.1:8000/addtodo/" method="POST">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="vNNBHyBWyeB6LG3iM75mj9Tn9sTb2BFH9bLWKKq7HG4OHRf5WItxlc5YeNK9Sru5">
+
+                    <div class="form-group">
+                        <input class="form-control form-add p-2 mt-4 m-3 mb-4" name="task" placeholder="Task" maxlength="100" required="">
+                        <textarea class="form-control form-desc p-2 m-3 mb-4" rows="6" name="desc" placeholder="Description"></textarea>
+                    </div>
+                    <div class="custom-control custom-switch mb-4">
+                        <input type="checkbox" class="custom-control-input" id="imp" name="imp">
+                        <label class="custom-control-label" for="imp"><i class="bx bxs-error bx-flashing-hover bx-sm">Important!</i></label>
+                    </div>
+                    <div class="d-flex justify-content-center mb-4">
+                        <button type="submit" class="btn btn-body pd-9 nav-link a-body">
+                            <i class="bx bx-list-plus bx-md"></i></button>
+                    </div>
+                    <input type="hidden" name="url" value="/">
+                </form>
+
+                
+            </div>
+            <!-- 
+             -->
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <!--===== FOOTER =====-->
+    <div class="footer">
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/meetdaxini/" class="footer__link" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/meetdaxini" class="footer__link" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/mitdaxini/" class="footer__link" target="_blank"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.facebook.com/meet.daxini.3/" class="footer__link" target="_blank"><i class="bx bxl-facebook"></i></a>
+        </div>
+        <p class="">Made with ❤️ by Meet Daxini.</p>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="./AlotTodo1_files/jquery-3.5.1.slim.min.js.download" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./AlotTodo1_files/bootstrap.bundle.min.js.download" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+<input type="file" id="" name="file" style="display: none;"><div data-v-0a2a5063="" class="container_selected_area" style="cursor: url(&quot;chrome-extension://ialiedlpfknneamnbemcgmaboleiccdd/assets/images/cursor-imagen.svg&quot;) 9 9, crosshair;"><div data-v-0a2a5063="" class="area"></div></div></body></html>
